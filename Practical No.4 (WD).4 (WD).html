@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Colorful Weekly Timetable</title>
+
+<style>
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg,#ff9a9e,#fad0c4);
+    text-align:center;
+    margin:0;
+}
+
+h1{
+    margin-top:20px;
+    color:white;
+    text-shadow:2px 2px 6px black;
+}
+
+table{
+    margin:30px auto;
+    border-collapse:collapse;
+    width:90%;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+th, td{
+    padding:15px;
+    border:2px solid white;
+    font-weight:bold;
+}
+
+th{
+    background:#333;
+    color:white;
+}
+
+/* Subjects Colors */
+
+.math{background:#ff7675;}
+.physics{background:#74b9ff;}
+.python{background:#55efc4;}
+.ai{background:#ffeaa7;}
+.web{background:#a29bfe;}
+.lab{background:#fd79a8;}
+.library{background:#81ecec;}
+.sports{background:#fab1a0;}
+.project{background:#e17055;}
+.seminar{background:#00cec9;}
+.lunch{background:#fdcb6e;}
+.holiday{background:#2ecc71;color:white;}
+
+tr:hover td{
+    transform:scale(1.03);
+    transition:0.2s;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>📚 Weekly Lecture Timetable</h1>
+
+<table>
+
+<thead>
+<tr>
+<th>Day</th>
+<th>9-10</th>
+<th>10-11</th>
+<th>11-12</th>
+<th>12-1</th>
+<th>1-2</th>
+<th>2-3</th>
+<th>3-4</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td><b>Monday</b></td>
+<td class="math">Mathematics</td>
+<td class="physics">Physics</td>
+<td class="python">Python</td>
+<td class="lunch" rowspan="7">🍴 Lunch</td>
+<td class="ai">AI</td>
+<td class="web">Web Dev</td>
+<td class="lab">Lab</td>
+</tr>
+
+<tr>
+<td><b>Tuesday</b></td>
+<td class="physics">Physics</td>
+<td class="math">Mathematics</td>
+<td class="python">Python</td>
+<td class="ai">AI</td>
+<td class="web">Web Dev</td>
+<td class="library">Library</td>
+</tr>
+
+<tr>
+<td><b>Wednesday</b></td>
+<td class="math">Mathematics</td>
+<td class="ai">AI</td>
+<td class="physics">Physics</td>
+<td class="python">Python</td>
+<td class="web">Web Dev</td>
+<td class="sports">Sports</td>
+</tr>
+
+<tr>
+<td><b>Thursday</b></td>
+<td class="physics">Physics</td>
+<td class="math">Mathematics</td>
+<td class="lab">Python Lab</td>
+<td class="ai">AI</td>
+<td class="web">Web Dev</td>
+<td class="project">Project</td>
+</tr>
+
+<tr>
+<td><b>Friday</b></td>
+<td class="ai">AI</td>
+<td class="physics">Physics</td>
+<td class="math">Mathematics</td>
+<td class="python">Python</td>
+<td class="web">Web Dev</td>
+<td class="seminar">Seminar</td>
+</tr>
+
+<tr>
+<td><b>Saturday</b></td>
+<td class="math">Mathematics</td>
+<td class="python">Python</td>
+<td class="ai">AI</td>
+<td class="physics">Physics</td>
+<td class="web">Web Dev</td>
+<td class="lab">Lab</td>
+</tr>
+
+<tr>
+<td><b>Sunday</b></td>
+<td colspan="6" class="holiday">Holiday / Self Study 📖</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</body>
+</html>
